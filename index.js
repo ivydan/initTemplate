@@ -1,17 +1,15 @@
 /*
  * @Author: Ju Dandan judandan0608@163.com
  * @Date : 2022-12-29 14:18:44
- * @LastEditors: Ju Dandan judandan0608@163.com
- * @LastEditTime: 2022-12-30 10:52:54
+ * @LastEditors: Ju Dandan
+ * @LastEditTime: 2023-02-09 10:57:29
  * @Description: index
  * 
  */
 
-
 const { mkdir } = require('./utils/mkdir')
 const { writeTSFile, writeLessFile } = require('./utils/writeFIle')
 const path = require('path')
-const readLine = require('readline')
 const process = require('process')
 
 // process.argv
@@ -27,7 +25,3 @@ mkdir(path.join(__dirname, `src/${argvList2}`))
 // 写入文件
 writeTSFile(path.join(__dirname, `src/${argvList2}/index.ts`), argvList2)
 writeLessFile(path.join(__dirname, `src/${argvList2}/index.module.less`), argvList2)
-
-
-
-
